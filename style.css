@@ -1,0 +1,87 @@
+/* /* 1. Write a selector to target the h1 in the first “hero” section */
+
+.jumbotron h1 {
+  background-color: red;
+}
+
+/* 2. Write a selector to target every children of the navbar */
+
+.nav > span {
+  background-color: blue;
+}
+/* /* 3. Write a selector to target the “continue reading…” inside the jumbotron */
+
+.font-weight-bold {
+  border: solid red 2px;
+}
+
+/* 4. Write a selector to target the first blogpost
+ */
+
+.blog-post:nth-child(2) {
+  border: solid salmon 2px;
+  border-radius: 10px;
+}
+
+/* 5. Write a selector to target the first blogpost <hr> and turn it red */
+
+.blog-post hr {
+  color: red;
+  background-color: red;
+}
+
+/* 6. Write a selector to target the “even” links in the navbar */
+
+nav span:nth-child(even) {
+  background-color: green;
+}
+
+/* 7. Write a selector to target all the <li> into the first ordered-list in the sidebar ( Archives ) */
+
+.p-4 ol li {
+  background-color: aqua;
+}
+
+/* 8. Write a selector to target the second blog-post author */
+
+.blog-post:nth-of-type(2) .blog-post-meta a[href="#"] {
+  background-color: brown;
+}
+
+/* 9. Write a selector to target the second <li> in the third blog-post unordered-list */
+
+.blog-post:nth-of-type(3) ul li:nth-child(3) {
+  background-color: burlywood;
+}
+
+/* 10. Write a selector to target the “back to top” link you can find at the bottom-right corner */
+
+a.float-right.mb-3.mr-3 {
+  background-color: blueviolet;
+}
+
+/* 11. Write a selector to target the “Newer” button at the bottom */
+
+nav.blog-pagination a:nth-child(2) {
+  border: solid 3px pink;
+}
+
+/* 12. Write a selector to target the footer’s second link */
+
+a[href="https://twitter.com/mdo"]
+{
+  background-color: pink;
+}
+
+/* 
+
+Write a JavaScript functionality to add a new link into the navbar
+Write a JavaScript functionality to change the color of the main heading title
+Write a JavaScript functionality to change the background of the jumbotron
+Write a JavaScript functionality to remove the “twitter” link under the “Elsewhere” section in the aside element. It should happen when the page loads, automatically
+Write a JavaScript functionality to remove the first 50 characters in the first paragraph for every blog post
+Write a JavaScript functionality to add a new Blog Post (div with title and text)
+Write a JavaScript functionality to remove the last Blog Post when the user clicks on the “Older” button
+Write a JavaScript functionality that will create an alert with the name of the author every time the user hovers the mouse on an author’s name
+EXTRA Write a JavaScript functionality that will remove the corresponding parent card from the DOM, upon clicking on their “Continue reading” link
+ */
