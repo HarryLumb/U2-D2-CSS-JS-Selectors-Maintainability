@@ -450,12 +450,10 @@
       // 17. Write a JavaScript functionality to remove the first 50 characters in the first paragraph for every blog post
 
       const removeChars = () => {
-        const blogPosts = document.querySelectorAll(
-          ".blog-post p:nth-child(3)"
-        );
-        for (let i = 0; i < blogPosts.length; i++) {
-          let text = blogPosts[i].innerText;
-          blogPosts[i].innerText = text.slice(50);
+        const theBlogs = document.querySelectorAll(".blog-post p:nth-child(3)");
+        for (let i = 0; i < theBlogs.length; i++) {
+          let content = theBlogs[i].innerText;
+          theBlogs[i].innerText = content.slice(50);
         }
       };
       removeChars();
@@ -511,13 +509,13 @@
       };
       linkName();
       //   // 21. EXTRA Write a JavaScript functionality that will remove the corresponding parent card from the DOM, upon clicking on their “Continue reading” link
-      const removeCards = () => {
-        const cardLinks = document.querySelectorAll("a[href='#'");
-        for (let i = 0; i < cardLinks.length; i++) {
-          console.log(cardLinks[1]);
-        }
-      };
-      removeCards();
+      //   const removeCards = () => {
+      //     const cardLinks = document.querySelectorAll("a[href='#'");
+      //     for (let i = 0; i < cardLinks.length; i++) {
+      //       console.log(cardLinks[1]);
+      //     }
+      //   };
+      //   removeCards();
     </script>
   </body>
 </html>
